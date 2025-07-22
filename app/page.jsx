@@ -60,7 +60,7 @@ const page = () => {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ delay: idx * 0.2 }}
-            className="bg-blue-50 rounded-xl p-6 text-center shadow-md"
+            className="bg-blue-100 rounded-xl p-6 text-center shadow-md"
           >
             <div className="text-4xl mb-3">{item.icon}</div>
             <h3 className="text-xl font-semibold mb-2 text-blue-700">
@@ -110,7 +110,7 @@ const page = () => {
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ delay: idx * 0.2 }}
-            className="bg-blue-50 rounded-xl p-6 shadow text-center md:text-left"
+            className="bg-blue-100 rounded-xl p-6 shadow text-center md:text-left"
           >
             <h3 className="text-2xl font-semibold text-blue-700 mb-3">
               {item.title}
@@ -144,7 +144,7 @@ const page = () => {
               initial={{ opacity: 0, x: -20 }}
               whileInView={{ opacity: 1, x: 0 }}
               transition={{ delay: idx * 0.1 }}
-              className="bg-blue-50 p-3 rounded-lg shadow-md"
+              className="bg-blue-100 p-3 rounded-lg shadow-md"
             >
               {item}
             </motion.li>

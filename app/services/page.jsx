@@ -87,7 +87,7 @@ export default function Services() {
               transition={{ delay: index * 0.05, duration: 0.4 }}
               className="relative group"
             >
-              <div className="bg-blue-50 rounded-lg shadow-lg p-8 transition-all duration-300 group-hover:shadow-xl group-hover:-translate-y-1">
+              <div className="bg-blue-100 rounded-lg shadow-lg p-8 transition-all duration-300 group-hover:shadow-xl group-hover:-translate-y-1">
                 <div className="text-4xl mb-4">{service.icon}</div>
                 <h3 className="text-xl font-semibold text-blue-700 mb-2">
                   {service.title}

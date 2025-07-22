@@ -37,7 +37,7 @@ export default function Contact() {
   transition={{ delay: 0.4 }}
   className="flex-1 space-y-6 "
 >
-  <div className="bg-blue-50 rounded-lg px-6 py-4 text-left">
+  <div className="bg-blue-100 rounded-lg px-6 py-4 text-left">
     <span className="font-semibold text-blue-700">📞 Phone:</span>
     <a href="tel:+2347060508873" className="text-blue-700 hover:underline ml-2 block">
       +234 706 050 8873
@@ -47,7 +47,7 @@ export default function Contact() {
     </a>
   </div>
 
-  <div className="bg-blue-50 rounded-lg px-6 py-4 text-left">
+  <div className="bg-blue-100 rounded-lg px-6 py-4 text-left">
     <span className="font-semibold text-blue-700">📧 Email:</span>
     <a href="mailto:Freshspecialisthospital@gmail.com" className="text-blue-700 hover:underline ml-2 block">
       Freshspecialisthospital@gmail.com
@@ -57,7 +57,7 @@ export default function Contact() {
     </a>
   </div>
 
-  <div className="bg-blue-50 rounded-lg px-6 py-4 text-left">
+  <div className="bg-blue-100 rounded-lg px-6 py-4 text-left">
     <span className="font-semibold text-blue-700">📍 Address:</span>
     <span className="ml-2 block">
       Balogun estate road along Lekki-Epe expressway
