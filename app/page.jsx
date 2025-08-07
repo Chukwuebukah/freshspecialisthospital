@@ -29,7 +29,7 @@ const page = () => {
         </div>
         <div className="md:w-1/2">
           <img
-            src="https://nourishmedpro.com/wp-content/uploads/2024/04/ed95de0425012c08a8edbf1d47cbf36f.jpg"
+            src="/check.jpg"
             alt="Hospital"
             className="rounded-xl shadow-lg w-full object-cover h-72 border border-blue-100"
           />
@@ -122,82 +122,80 @@ const page = () => {
 
                   {/* Strength Section */}
 
-        <h2 className="text-3xl font-bold text-blue-700 mb-6 text-center">
-          {" "}
-          Strength{" "}
-        </h2>
-        <ul className="grid md:grid-cols-4 gap-4 mx-auto text-gray-700">
-          {[
-            "Qualified staff",
-            "Advanced technology",
-            "Specialized services",
-            "Comprehensive care",
-            "Strong management",
-            "Accreditation and certifications",
-            "Patient-centric approach",
-            "Emergency readiness",
-            "Research and innovation",
-            "Community engagement",
-          ].map((item, idx) => (
-            <motion.li
-              key={idx}
-              initial={{ opacity: 0, x: -20 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              transition={{ delay: idx * 0.1 }}
-              className="bg-blue-100 p-3 rounded-lg shadow-md"
-            >
-              {item}
-            </motion.li>
-          ))}
-        </ul>
-      </section>
+                  <h2 className="text-3xl font-bold text-blue-700 mb-6 text-center">
+                    Strength
+                  </h2>
+                  <ul className="grid md:grid-cols-4 gap-4 mx-auto text-gray-700">
+                    {[
+                      "Qualified staff",
+                      "Advanced technology",
+                      "Specialized services",
+                      "Comprehensive care",
+                      "Strong management",
+                      "Accreditation and certifications",
+                      "Patient-centric approach",
+                      "Emergency readiness",
+                      "Research and innovation",
+                      "Community engagement",
+                    ].map((item, idx) => (
+                      <motion.li
+                        key={idx}
+                        initial={{ opacity: 0, x: -20 }}
+                        whileInView={{ opacity: 1, x: 0 }}
+                        transition={{ delay: idx * 0.1 }}
+                        className="bg-blue-100 p-3 rounded-lg shadow-md"
+                      >
+                        {item}
+                      </motion.li>
+                    ))}
+                  </ul>
+                  </section>
 
-    
-
-      {/* Testimonials */}
-      <section className="mb-20">
-        <h2 className="text-2xl font-bold text-blue-700 mb-6 text-center">
-          What Our Patients Say
-        </h2>
-        <div className="grid md:grid-cols-3 gap-8">
-          {[
-            {
-              name: "Chinedu Okafor",
-              text: "The doctors and nurses were caring and professional. I felt safe throughout my stay.",
-              city: "Lagos, Nigeria",
-            },
-            {
-              name: "Ngozi Eze",
-              text: "Excellent maternity care. I felt comfortable and supported at every step.",
-              city: "Abuja, Nigeria",
-            },
-            {
-              name: "Babatunde Adebayo",
-              text: "Modern and clean facilities. Highly recommended for quality healthcare.",
-              city: "Ibadan, Nigeria",
-            },
-          ].map((testi, idx) => (
-            <motion.div
-              key={idx}
-              initial={{ opacity: 0, scale: 0.9 }}
-              whileInView={{ opacity: 1, scale: 1 }}
-              transition={{ delay: idx * 0.2 }}
-              className="bg-white rounded-xl shadow-md p-6 flex flex-col items-center"
-            >
-              <img
-                src={testi.img}
-                alt={testi.name}
-                className="w-20 h-20 rounded-full mb-4 object-cover border-4 border-blue-100"
-              />
-              <p className="text-gray-700 italic mb-2">“{testi.text}”</p>
-              <span className="font-semibold text-blue-700">{testi.name}</span>
-              <span className="text-sm text-gray-500">{testi.city}</span>
-            </motion.div>
-          ))}
-        </div>
-      </section>
-
-      {/* CTA Section */}
+                  {/* Testimonials */}
+                  <section className="mb-20">
+                    <h2 className="text-2xl font-bold text-blue-700 mb-6 text-center">
+                      What Our Patients Say
+                    </h2>
+                    <div className="grid md:grid-cols-3 gap-8">
+                      {[
+                        {
+                          name: "Chinedu Okafor",
+                          text: "The doctors and nurses were caring and professional. I felt safe throughout my stay.",
+                          city: "Lagos, Nigeria",
+                          img: "https://i.pinimg.com/736x/89/a3/a5/89a3a5bf8d29d9f0ec398e56993bc53a.jpg", // Nigerian man
+                        },
+                        {
+                          name: "Ngozi Eze",
+                          text: "Excellent maternity care. I felt comfortable and supported at every step.",
+                          city: "Abuja, Nigeria",
+                          img: "https://i.pinimg.com/1200x/0e/72/62/0e72623081f5f6ae77cbbe912894a1ea.jpg", // Nigerian woman
+                        },
+                        {
+                          name: "Babatunde Adebayo",
+                          text: "Modern and clean facilities. Highly recommended for quality healthcare.",
+                          city: "Banana Island, Nigeria",
+                          img: "https://i.pinimg.com/1200x/64/ea/f2/64eaf234a6b0ef43eece36de24c3eace.jpg", // Nigerian man
+                        },
+                      ].map((testi, idx) => (
+                        <motion.div
+                          key={idx}
+                          initial={{ opacity: 0, scale: 0.9 }}
+                          whileInView={{ opacity: 1, scale: 1 }}
+                          transition={{ delay: idx * 0.2 }}
+                          className="bg-white rounded-xl shadow-md p-6 flex flex-col items-center"
+                        >
+                          <img
+                            src={testi.img}
+                            alt={testi.name}
+                            className="w-20 h-20 rounded-full mb-4 object-cover border-4 border-blue-100"
+                          />
+                          <p className="text-gray-700 italic mb-2">“{testi.text}”</p>
+                          <span className="font-semibold text-blue-700">{testi.name}</span>
+                          <span className="text-sm text-gray-500">{testi.city}</span>
+                        </motion.div>
+                      ))}
+                    </div>
+                  </section>
       <motion.section
         initial={{ opacity: 0, y: 30 }}
         whileInView={{ opacity: 1, y: 0 }}

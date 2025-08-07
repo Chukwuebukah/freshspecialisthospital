@@ -4,65 +4,60 @@ import { motion } from 'framer-motion';
 export default function Services() {
   const services = [
     {
-      icon: "🏥",
-      title: "Emergency Care",
-      description: "24/7 emergency medical services with rapid response teams and state-of-the-art equipment.",
-    },
-    {
-      icon: "👨‍⚕️",
-      title: "Expert Doctors",
-      description: "Highly qualified medical professionals with years of experience in various specialties.",
-    },
-    {
-      icon: "💉",
-      title: "Vaccination",
-      description: "Comprehensive vaccination services for all age groups with proper medical consultation.",
-    },
-    {
-      icon: "🔬",
-      title: "Laboratory",
-      description: "Advanced diagnostic laboratory with accurate and timely test results.",
-    },
-    {
-      icon: "🦷",
-      title: "Dental Care",
-      description: "Complete dental care services from routine check-ups to complex procedures.",
-    },
-    {
-      icon: "👶",
-      title: "Pediatric Care",
-      description: "Specialized medical care for infants, children, and adolescents.",
-    },
-    {
-      icon: "✂",
-      title: "Surgery",
-      description: "Comprehensive surgical services with state-of-the-art facilities and experienced surgeons.",
-    },
-    {
-      icon: "👨‍👩‍👧‍👦",
-      title: "Family Planning",
-      description: "Family planning services including consultations, contraceptives, and reproductive health education.",
-    },
-    {
       icon: "🩺",
-      title: "Cardiology",
-      description: "Comprehensive cardiac care services including diagnosis, treatment, and rehabilitation.",
+      title: "General Medical Consultations",
+      description: "Comprehensive medical consultations with experienced doctors for diagnosis, treatment, and management of various health conditions.",
+    },
+    {
+      icon: "⚕️",
+      title: "General Surgery",
+      description: "Professional surgical procedures conducted by skilled surgeons in our state-of-the-art operating facilities.",
     },
     {
       icon: "🤰",
-      title: "Obstetrics and Gynaecology",
-      description: "Specialized care for women's health, including pregnancy, childbirth, and reproductive system disorders.",
+      title: "Obstetric And Gynecology",
+      description: "Specialized care for women including pregnancy management, childbirth services, and treatment of reproductive system disorders.",
+    },
+    {
+      icon: "🔬",
+      title: "Laboratory Services",
+      description: "Comprehensive diagnostic testing including blood work, urinalysis, pathology, and other medical tests with quick and accurate results.",
+    },
+    {
+      icon: "❤️",
+      title: "Specialist Consultations (Cardiologist, Paediatrican, Dermatologist)",
+      description: "Access to board-certified specialists in cardiology, pediatrics, dermatology, and more for expert medical opinions and treatments.",
     },
     {
       icon: "💉",
-      title: "Immunisation",
-      description: "Routine immunisation services to protect against various infectious diseases.",
+      title: "Immunization",
+      description: "Complete vaccination services for children and adults, following recommended immunization schedules to prevent infectious diseases.",
     },
     {
-      icon: "🖥️",
-      title: "Ultrasound Scan",
-      description: "Advanced ultrasound imaging services for accurate diagnosis and monitoring.",
-    }
+      icon: "📲",
+      title: "Telehealth Consultations",
+      description: "Virtual medical consultations with healthcare providers from the comfort of your home via secure video conferencing.",
+    },
+    {
+      icon: "👪",
+      title: "Family Planning",
+      description: "Confidential consultations, contraceptive options, and education to help individuals and couples plan their families.",
+    },
+    {
+      icon: "🏡",
+      title: "Home-Care Services",
+      description: "Professional medical care brought to your doorstep, including nursing services, rehabilitation, and assistance for those unable to visit the hospital.",
+    },
+    {
+      icon: "🧓",
+      title: "Geriatric Care",
+      description: "Specialized healthcare services for elderly patients, addressing age-related conditions and ensuring comfort and dignity.",
+    },
+    {
+      icon: "🛡️",
+      title: "HMO",
+      description: "Health Maintenance Organization services providing comprehensive healthcare coverage with a network of preferred providers for cost-effective care.",
+    },
   ];
 
   return (
@@ -102,3 +97,4 @@ export default function Services() {
     </section>
   );
 }
+

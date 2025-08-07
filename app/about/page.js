@@ -3,8 +3,39 @@
 import { motion } from "framer-motion";
 
 export default function About() {
+  // Gallery images from public directory
+  const galleryImages = [
+    { src: "/check.jpg", alt: "Medical Checkup" },
+    { src: "/rib.jpg", alt: "Rib Examination" },
+    { src: "/sub.jpg", alt: "Medical Subspecialty" },
+    { src: "/surgery.jpg", alt: "Surgery Procedure" }
+  ];
+
   return (
     <div className="px-4 py-16 max-w-7xl mx-auto">
+        {/* Photo Gallery Section */}
+        <section className="mb-20">
+          <h2 className="text-3xl font-bold text-blue-700 text-center mb-10">Our Gallery</h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            {galleryImages.map((image, idx) => (
+              <motion.div
+                key={idx}
+                initial={{ opacity: 0, scale: 0.9 }}
+                whileInView={{ opacity: 1, scale: 1 }}
+                viewport={{ once: true }}
+                transition={{ delay: idx * 0.2 }}
+                className="overflow-hidden rounded-xl shadow-lg"
+              >
+                <img 
+                  src={image.src}
+                  alt={image.alt}
+                  className="w-full h-64 object-cover transition-transform duration-500 hover:scale-110"
+                />
+              </motion.div>
+            ))}
+          </div>
+        </section>
+
         {/* Core Values */}
             <section className="mb-20">
               <h2 className="text-3xl font-bold text-blue-700 mb-6 text-center">Core Values</h2>
