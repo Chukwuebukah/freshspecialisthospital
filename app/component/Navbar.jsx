@@ -10,7 +10,6 @@ export default function Navbar() {
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
         <a href="/" className="flex items-center space-x-3">
           <img src="/Logo.jpeg" className="h-12" alt="Logo" />
-          <h2 className='text-blue-700'>FSH</h2>
         </a>
         <button
           onClick={() => setMenuOpen(!menuOpen)}

@@ -6,7 +6,7 @@ import Navbar from './component/Navbar'; // move navbar into separate client com
 
 
 export const metadata = {
-  title: 'Fresh Specialist Hospital',
+  title: 'Fresh Hospital',
   description: 'Your health and well-being are our top priorities',
   icons: {
     icon: '/Logo.jpeg',

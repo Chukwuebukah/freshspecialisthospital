@@ -14,7 +14,7 @@ const page = () => {
       >
         <div className="md:w-1/2 text-center md:text-left">
           <h1 className="text-5xl font-bold text-blue-700 leading-tight mb-6">
-            Fresh Specialist Hospital
+            Fresh Hospital
           </h1>
           <p className="text-lg text-gray-700 mb-8">
             Your health and well-being are our top priorities. Explore our
@@ -70,6 +70,37 @@ const page = () => {
           </motion.div>
         ))}
       </section>
+
+        {/* Emergency Contact */}
+        <section className="mb-20">
+          <motion.div
+            initial={{ opacity: 0, scale: 0.95 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.4 }}
+            className="bg-red-50 border-l-4 border-red-500 rounded-xl p-8 flex flex-col md:flex-row items-center justify-between shadow-md"
+          >
+            <div className="flex items-center gap-4 mb-4 md:mb-0">
+          <span className="text-4xl text-red-600">🚨</span>
+          <div>
+            <h2 className="text-2xl font-bold text-red-700 mb-1">
+              Emergency Contact
+            </h2>
+            <p className="text-gray-700">
+              For urgent medical attention, call us immediately:
+            </p>
+          </div>
+            </div>
+            <div className="flex flex-col items-center md:items-end">
+          <a
+            href="tel:+2348012345678"
+            className="text-xl font-semibold text-red-700 bg-white border border-red-200 px-6 py-3 rounded-lg shadow hover:bg-red-100 transition mb-2"
+          >
+            +234 801 234 5678
+          </a>
+          <span className="text-sm text-gray-500">24/7 Emergency Line</span>
+            </div>
+          </motion.div>
+        </section>
 
       {/* Core Values */}
       <section className="mb-20">

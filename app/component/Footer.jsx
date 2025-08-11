@@ -4,7 +4,7 @@ const Footer = () => (
 
       {/* Brand Info */}
       <div>
-        <h2 className="text-xl font-bold mb-3">Fresh Specialist Hospital</h2>
+        <h2 className="text-xl font-bold mb-3">Fresh Hospital</h2>
         <p className="text-sm text-gray-600">
           Dedicated to delivering personalized, world-class medical care in a safe and welcoming environment. Your health is our priority.
         </p>
@@ -46,7 +46,7 @@ const Footer = () => (
 
     {/* Bottom Bar */}
     <div className="text-center text-sm text-gray-600">
-      © {new Date().getFullYear()} Fresh Specialist Hospital. All rights reserved.
+      © {new Date().getFullYear()} Fresh Hospital. All rights reserved.
     </div>
   </footer>
 );

@@ -91,7 +91,7 @@ export default function About() {
           <p className="w-full md:w-[60%] text-gray-700 leading-relaxed text-justify">
             Our dedicated team of professionals uses state-of-the-art technology and personalized care
             to deliver exceptional medical services. We empower our patients with knowledge and a
-            preventive approach to stay healthy while avoiding complications. At Fresh Specialist Hospital,
+            preventive approach to stay healthy while avoiding complications. At Fresh Hospital,
             we are passionate about providing compassionate, personalized care in a warm, welcoming
             environment.
           </p> 
@@ -117,7 +117,7 @@ export default function About() {
             <strong className="text-blue-700">Dr. Tope Olugboyo, M.B.B.S</strong> is a skilled doctor with nearly a decade of experience,
             serving patients in Lagos with a passion for personalized healthcare. A graduate from the
             University of Jos, he blends preventive, diagnostic, and restorative medicine with empathy
-            and professionalism. Dr. Tope leads Fresh Specialist Hospital with a strong commitment to
+            and professionalism. Dr. Tope leads Fresh Hospital with a strong commitment to
             patient-centered care, ensuring everyone feels heard, safe, and supported.
           </p>
         </motion.div>
