@@ -7,8 +7,11 @@ export default function About() {
   const galleryImages = [
     { src: "/check.jpg", alt: "Medical Checkup" },
     { src: "/rib.jpg", alt: "Rib Examination" },
-    { src: "/sub.jpg", alt: "Medical Subspecialty" },
-    { src: "/surgery.jpg", alt: "Surgery Procedure" }
+    { src: "/surgery.jpg", alt: "Surgery Procedure" },
+        { src: "/picture 1.jpg", alt: "Surgery Procedure" },
+    { src: "/picture 2.jpg", alt: "Surgery Procedure" },
+    { src: "/picture 3.jpg", alt: "Surgery Procedure" },
+    { src: "/picture 4.jpg", alt: "Surgery Procedure" },
   ];
 
   return (
