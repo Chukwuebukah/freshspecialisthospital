@@ -24,11 +24,11 @@ const Footer = () => (
       {/* Contact Info */}
       <div>
         <h3 className="text-lg font-semibold mb-3">Contact</h3>
-        <p className="text-sm space-y-1">
+        <div className="text-sm space-y-1">
           <div><strong>Phone:</strong> <a href="tel:+2347060508873" className="hover:underline">+234 706 050 8873</a></div>
           <div><strong>Phone:</strong> <a href="tel:+2348083284788" className="hover:underline">0808 328 4788</a></div>
           <div><strong>Email:</strong> <a href="mailto:info@freshspecialisthospital.com" className="hover:underline">info@freshspecialisthospital.com</a></div>
-        </p>
+        </div>
       </div>
 
       {/* Address Info */}
@@ -45,9 +45,15 @@ const Footer = () => (
     <hr className="my-8 border-gray-300" />
 
     {/* Bottom Bar */}
-    <div className="text-center text-sm text-gray-600">
-      © {new Date().getFullYear()} Fresh Hospital. All rights reserved.
+    <div className="flex flex-col md:flex-row justify-between items-center text-sm text-gray-600 gap-2 px-4">
+      <div>
+        © {new Date().getFullYear()} Fresh Hospital. All rights reserved.
+      </div>
+      <div className="text-center md:text-right">
+        <a href="https://www.qcwix.com" className="hover:underline">Powered by Qcwix</a>
+      </div>
     </div>
+  
   </footer>
 );
 
